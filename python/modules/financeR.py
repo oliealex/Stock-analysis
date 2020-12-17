@@ -5,31 +5,38 @@ import json
 class finance_api:
     '''Finance API class'''
 
-    def __init__(self, api_key, api_url):
+    def __init__(self, api_key):
         self.api_key = api_key
 
-    def api_handler(feature, tickers, time=False, period=False)
-    '''
+    def api_handler(self, feature, tickers, time=False, period=False):
+        '''
         [Description]
         Handles the financialmodelingprep API.
+        
+        [Arguments]
+        feature - API endpoint (string)
+        tickers - stock tickers (array of strings)
+        time - e.g. 15min 1min etc. (string)
+        period - e.g. quarter annual or 10 15 etc. (string)
 
         [Returns]
         Dataframe
-    '''
+        '''
         if time == False and period == False:
-            response = requests.get("https://financialmodelingprep.com/api/v3/{}/{}?apikey={}".format(feature,tickers,self.api_key))
+            response = requests.get("https://financialmodelingprep.com/api/v3/{}/{}?apikey={}".format(feature,",".join(tickers),self.api_key))
         elif time == True and period == False:
-            response = requests.get("https://financialmodelingprep.com/api/v3/{}/{}/{}?apikey={}".format(feature,time,tickers,self.api_key))
+            response = requests.get("https://financialmodelingprep.com/api/v3/{}/{}/{}?apikey={}".format(feature,time,",".join(tickers),self.api_key))
         elif time == False and period == True:
-            response = requests.get("https://financialmodelingprep.com/api/v3/{}/{}?period={}&apikey={}".format(feature,tickers,period,self.api_key))
+            response = requests.get("https://financialmodelingprep.com/api/v3/{}/{}?period={}&apikey={}".format(feature,",".join(tickers),period,self.api_key))
         else:
-            response = requests.get("https://financialmodelingprep.com/api/v3/{}/{}/{}?period={}&apikey={}".format(feature,time,tickers,period,self.api_key))
+            response = requests.get("https://financialmodelingprep.com/api/v3/{}/{}/{}?period={}&apikey={}".format(feature,time,",".join(tickers),period,self.api_key))
 
-        if response.status_code != 200:
-            print("Error status code: " + response.status_code)
-            return
-        
-        df = pd.json_normalize(response.json(), 'historical')
+
+        if 'historical' in response.json():
+            df = pd.json_normalize(response.json(), 'historical')
+        else:
+            df = pd.json_normalize(response.json())
+
         return df
 
 '''
