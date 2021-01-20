@@ -7,7 +7,8 @@
 
 <!-- badges: end -->
 
-Makes it possible and easy to use the Yahoo finace API in R.
+The goal of financeR is to makes it easy to use the FMP api and
+accessing a lot of stock data in real time as well as historic data.
 
 ## Installation
 
@@ -16,6 +17,22 @@ You can install the released version of financeR from
 
 ``` r
 install.packages("financeR")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("oliealex/Stock-analysis")
+```
+
+## Authentication
+
+First, set up an account with <https://financialmodelingprep.com/> and
+retrieve your api key, then make sure to set your api key as follwing.
+
+``` r
+api <- 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 ```
 
 ## Example

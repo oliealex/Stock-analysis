@@ -1,10 +1,10 @@
 Package: financeR
 Type: Package
-Title: Yahoo Finance API Wrapper
+Title: Financemodelingprep API wrapper
 Version: 0.1.0
 Author: Elias Forsblom <forsblomelias@gmail.com>
 Maintainer: Elias Forsblom <forsblomelias@gmail.com>
-Description: Makes it possible and easy to use the Yahoo finace API in R.
+Description: Makes it easy to use the FMP api and accessing a lot of stock data in real time as well as historic data.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
