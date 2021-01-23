@@ -1,3 +1,12 @@
+#' Get tickers
+#'
+#' @param api_key Required. Your API key.
+#'
+#' @return Returns a data frame of results containing all available tickers
+#' @export
+#'
+#' @examples
+#' get_tickers(api_key = api)
 get_tickers <- function(api_key = api){
   res <- GET(paste0("https://financialmodelingprep.com/api/v3/stock/list/?apikey=",api_key))
   data <- fromJSON(rawToChar(res$content))

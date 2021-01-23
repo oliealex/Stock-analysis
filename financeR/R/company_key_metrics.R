@@ -1,3 +1,13 @@
+#' Get company key metrics
+#'
+#' @param tickers Required. The name of the tickers.
+#' @param api_key Required. Your API key.
+#'
+#' @return Returns a data frame of results containing company key metrics data.
+#' @export
+#'
+#' @examples
+#' company_key_metrics(tickers = c("AAPL", "MSFT"), api_key = api)
 company_key_metrics <- function(tickers, api_key = api){
   if(length(tickers) > 1){
     res <- GET(paste0("https://financialmodelingprep.com/api/v3/key-metrics-ttm/",tickers[1],"?apikey=",api_key))

@@ -1,13 +1,22 @@
-#' Title
+#' Get historic stock price
 #'
-#' @param ticker
-#' @param time
-#' @param api_key
+#' @param ticker Required. The name of the ticker.
+#' @param time Required. The time of which the market is updated. full, 1min, 5min, 15min, 30min, 1hour or 4hour.
+#' Valid values are:
+#' "full"
+#' "1min"
+#' "5min"
+#' "15min"
+#' "30min"
+#' "1hour"
+#' "4hour"
+#' @param api_key Required. Your API key.
 #'
-#' @return
+#' @return Returns a data frame of results containing historic stock price data.
 #' @export
 #'
 #' @examples
+#' historic_price(ticker = "AAPL", time = "full", api_key = api)
 historic_price <- function(ticker, time, api_key = api){
   if(time == "full"){
     res <- GET(paste0("https://financialmodelingprep.com/api/v3/historical-price-full/",ticker,"?apikey=",api_key))

@@ -1,6 +1,6 @@
 Package: financeR
 Type: Package
-Title: Financemodelingprep API wrapper
+Title: Financemodelingprep API Wrapper
 Version: 0.1.0
 Author: Elias Forsblom <forsblomelias@gmail.com>
 Maintainer: Elias Forsblom <forsblomelias@gmail.com>

@@ -2,6 +2,14 @@
 output: github_document
 ---
 
+```{r packages, include = FALSE}
+library("httr")
+library("jsonlite")
+library("financeR")
+library("ggplot2")
+library("lubridate")
+```
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
@@ -18,7 +26,9 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of financeR is to makes it easy to use the FMP api and accessing a lot of stock data in real time as well as historic data.
+
+## Pull big amounts of stock and financial data from the 'financialmodelingprep' API
+A wrapper for pulling stock and financial data from the 'financialmodelingprep' API <https://financialmodelingprep.com/developer/docs/> in bulk.
 
 ## Installation
 
@@ -35,9 +45,15 @@ And the development version from [GitHub](https://github.com/) with:
 devtools::install_github("oliealex/Stock-analysis")
 ```
 
+Required packages are: 
+``` r
+require(httr) 
+require(jsonlite)
+```
+
 ## Authentication
 
-First, set up an account with https://financialmodelingprep.com/ and retrieve your api key, then make sure to set your api key as follwing.
+First, set up an account with <https://financialmodelingprep.com/> and retrieve your api key, then make sure to set your api key as follwing.
 
 ```{r authentication}
 api <- 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
@@ -47,25 +63,31 @@ api <- 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Do you want to see historical stock data?:
 
 ```{r example}
 library(financeR)
-## basic example code
+api <- "42632c388365783ab0c341411f47ae80"
+
+PLTR <- historic_price(ticker = "PLTR", time = "full", api_key = api)
+head(PLTR)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+Or maybe plot the historical stock prices?:
 
-```{r cars}
-summary(cars)
+```{r indicators}
+library(financeR)
+library(lubridate)
+library(ggplot2)
+api <- "42632c388365783ab0c341411f47ae80"
+
+AAPL <- historic_price(ticker = "AAPL", time = "full", api_key = api)
+AAPL$date <- as.Date(AAPL$date)
+plot <- ggplot(AAPL, aes(x = date, y = close)) +
+  geom_line(colour = "red") +
+  theme_bw()
+plot
+
+
+
 ```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!

@@ -1,3 +1,13 @@
+#' Get company profile
+#'
+#' @param tickers Required. The name of the tickers.
+#' @param api_key Required. Your API key.
+#'
+#' @return Returns a data frame of results containing company profiles data.
+#' @export
+#'
+#' @examples
+#' company_profile(tickers = c("AAPL", "MSFT"), api_key = api)
 company_profile <- function(tickers, api_key = api){
   if(length(tickers) > 1){
     res <- GET(paste0("https://financialmodelingprep.com/api/v3/profile/",tickers[1],"?apikey=",api_key))
