@@ -18,5 +18,5 @@ Returns a data frame of results containing company key executives data.
 Get company key executives
 }
 \examples{
-key_executives(tickers = c("AAPL", "MSFT"), api_key = api)
+key_executives(tickers = "AAPL", api_key = "42632c388365783ab0c341411f47ae80")
 }

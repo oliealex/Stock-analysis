@@ -19,7 +19,10 @@
 #' @export
 #'
 #' @examples
-#' daily_indicators(ticker = "AAPL", period = 10, type = "EMA", api_key = api)
+#' daily_indicators(ticker = "AAPL",
+#' period = 10,
+#' type = "EMA",
+#' api_key = "42632c388365783ab0c341411f47ae80")
 daily_indicators <- function(ticker, period, type, api_key = api){
   res <- GET(paste0("https://financialmodelingprep.com/api/v3/technical_indicator/daily/",ticker,"?period=",period,"&type=",type,"&apikey=",api_key))
   data <- fromJSON(rawToChar(res$content))

@@ -18,5 +18,5 @@ Returns a data frame of results containing etf holders.
 Get etf holders
 }
 \examples{
-etf_holders(ticker = "AAPL", api_key = api)
+etf_holders(ticker = "AAPL", api_key = "42632c388365783ab0c341411f47ae80")
 }

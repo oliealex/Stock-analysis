@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' most_gainer(api_key = api)
+#' most_gainer(api_key = "42632c388365783ab0c341411f47ae80")
 most_gainer <- function(api_key = api){
   res <- GET(paste0("https://financialmodelingprep.com/api/v3/gainers?apikey=",api_key))
   data <- fromJSON(rawToChar(res$content))

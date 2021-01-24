@@ -18,5 +18,5 @@ Returns a data frame of results containing earning suprises data.
 Get earning suprises
 }
 \examples{
-earning_suprises(ticker = "AAPL", api_key = api)
+earning_suprises(ticker = "AAPL", api_key = "42632c388365783ab0c341411f47ae80")
 }

@@ -18,5 +18,5 @@ Returns a data frame of results containing company key metrics data.
 Get company key metrics
 }
 \examples{
-company_key_metrics(tickers = c("AAPL", "MSFT"), api_key = api)
+company_key_metrics(tickers = c("AAPL"), api_key = "42632c388365783ab0c341411f47ae80")
 }

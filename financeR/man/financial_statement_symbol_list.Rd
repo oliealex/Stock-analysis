@@ -16,5 +16,5 @@ Returns a data frame of results containing financial statement symbol list
 Get finanial statement symbol list
 }
 \examples{
-financial_statement_symbol_list(api_key = api)
+financial_statement_symbol_list(api_key = "42632c388365783ab0c341411f47ae80")
 }

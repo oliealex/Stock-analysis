@@ -15,6 +15,3 @@ Returns a vector of results containing all available tickers
 \description{
 Get tickers as vector
 }
-\examples{
-get_tickers_vector(api_key = api)
-}

@@ -18,5 +18,5 @@ Returns a data frame of results containing company financial ratios data.
 Get company financial ratios
 }
 \examples{
-company_financial_ratios(tickers = c("AAPL", "MSFT"), api_key = api)
+company_financial_ratios(tickers = c("AAPL"), api_key = "42632c388365783ab0c341411f47ae80")
 }

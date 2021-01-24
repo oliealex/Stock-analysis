@@ -17,3 +17,6 @@ Returns a data frame of results press realses.
 \description{
 Get press releases
 }
+\examples{
+press_releases(ticker = "AAPL", api_key = "42632c388365783ab0c341411f47ae80")
+}

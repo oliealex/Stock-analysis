@@ -18,5 +18,5 @@ Returns a data frame of results containing discounted cash flow data.
 Get discounted cash flow data
 }
 \examples{
-discounted_cash_flow(tickers = c("AAPL", "MSFT"), api_key = api)
+discounted_cash_flow(tickers = c("AAPL"), api_key = "42632c388365783ab0c341411f47ae80")
 }

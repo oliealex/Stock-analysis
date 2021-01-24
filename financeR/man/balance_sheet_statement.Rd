@@ -23,5 +23,8 @@ Returns a data frame of results containing company balance sheet statements data
 Get balance sheet statements
 }
 \examples{
-balance_sheet_statement(ticker = "AAPL", period = "annualy", api_key = api)
+balance_sheet_statement(
+ticker = "AAPL",
+period = "annualy",
+api_key = "42632c388365783ab0c341411f47ae80")
 }

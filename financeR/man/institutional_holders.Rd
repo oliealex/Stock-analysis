@@ -18,5 +18,5 @@ Returns a data frame of results containing institutional holders.
 Get institutional holders
 }
 \examples{
-institutional_holders(ticker = "AAPL", api_key = api)
+institutional_holders(ticker = "AAPL", api_key = "42632c388365783ab0c341411f47ae80")
 }

@@ -16,5 +16,5 @@ Returns a data frame of results containing most active stocks.
 Get most active stocks
 }
 \examples{
-most_active(api_key = api)
+most_active(api_key = "42632c388365783ab0c341411f47ae80")
 }

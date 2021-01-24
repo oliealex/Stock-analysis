@@ -18,5 +18,5 @@ Returns a data frame of results containing mutual fund holders.
 Get mutual fund holders
 }
 \examples{
-mutual_fund_holder(ticker = "AAPL", api_key = api)
+mutual_fund_holder(ticker = "AAPL", api_key = "42632c388365783ab0c341411f47ae80")
 }

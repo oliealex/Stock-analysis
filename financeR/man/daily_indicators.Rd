@@ -32,5 +32,8 @@ Returns a data frame of results containing daily indicators.
 Get daily indicators
 }
 \examples{
-daily_indicators(ticker = "AAPL", period = 10, type = "EMA", api_key = api)
+daily_indicators(ticker = "AAPL",
+period = 10,
+type = "EMA",
+api_key = "42632c388365783ab0c341411f47ae80")
 }

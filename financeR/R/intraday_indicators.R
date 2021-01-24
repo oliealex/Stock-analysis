@@ -27,7 +27,11 @@
 #' @export
 #'
 #' @examples
-#' intraday_indicators(ticker = "AAPL", time = "1hour", type = "SMA", api_key = api)
+#' intraday_indicators(ticker = "AAPL",
+#' time = "1hour",
+#' period =  10,
+#' type = "SMA",
+#' api_key = "42632c388365783ab0c341411f47ae80")
 intraday_indicators <- function(ticker, time, period, type, api_key = api){
   if(time == "1min"){
     res <- GET(paste0("https://financialmodelingprep.com/api/v3/technical_indicator/",time,"/",ticker,"?period=",period,"&type=",type,"&apikey=",api_key))

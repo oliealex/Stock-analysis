@@ -12,7 +12,10 @@
 #' @export
 #'
 #' @examples
-#' financial_statement_growth(ticker = "AAPL", type = "income", api_key = api)
+#' financial_statements_growth(
+#' ticker = "AAPL",
+#' type = "income",
+#' api_key = "42632c388365783ab0c341411f47ae80")
 financial_statements_growth <- function(ticker, type, api_key = api){
   if(type == "income"){
     res <- GET(paste0("https://financialmodelingprep.com/api/v3/income-statement-growth/",ticker,"?apikey=",api_key))

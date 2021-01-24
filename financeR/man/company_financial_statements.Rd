@@ -23,5 +23,8 @@ Returns a data frame of results containing company financial statements data.
 Get company financial statements
 }
 \examples{
-company_financial_statements(ticker = "AAPL", period = "annualy")
+company_financial_statements(
+ticker = "AAPL",
+period = "annualy",
+api_key = "42632c388365783ab0c341411f47ae80")
 }

@@ -18,5 +18,5 @@ Returns a data frame of results containing market capitalization data.
 Get market capitalixation
 }
 \examples{
-market_capitalization(tickers = c("AAPL", "MSFT"), api_key = api)
+market_capitalization(tickers = c("AAPL"), api_key = "42632c388365783ab0c341411f47ae80")
 }

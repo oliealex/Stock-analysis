@@ -18,5 +18,5 @@ Returns a data frame of results from your cik search.
 Cik search
 }
 \examples{
-search_cik(cik_name = "Berkshire", api_key = api)
+search_cik(cik_name = "Berkshire", api_key = "42632c388365783ab0c341411f47ae80")
 }

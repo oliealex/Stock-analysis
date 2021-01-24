@@ -30,5 +30,9 @@ Returns a data frame of results containing statements as reported.
 Get statements as reported
 }
 \examples{
-statements_as_reported(ticker = "AAPL", type = "income", period = "annualy", api_key = api)
+statements_as_reported(
+ticker = "AAPL",
+type = "income",
+period = "annualy",
+api_key = "42632c388365783ab0c341411f47ae80")
 }

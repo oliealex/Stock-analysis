@@ -23,5 +23,8 @@ Returns a data frame of results containing company enterprise value data.
 Get company enterprise value
 }
 \examples{
-company_enterprise_value(ticker = "AAPL", period = "annualy", api_key = api)
+company_enterprise_value(
+ticker = "AAPL",
+period = "annualy",
+api_key = "42632c388365783ab0c341411f47ae80")
 }

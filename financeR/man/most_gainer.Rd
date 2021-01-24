@@ -16,5 +16,5 @@ Returns a data frame of results containing most gaining stocks.
 Get most gaining stocks
 }
 \examples{
-most_gainer(api_key = api)
+most_gainer(api_key = "42632c388365783ab0c341411f47ae80")
 }

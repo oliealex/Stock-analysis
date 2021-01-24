@@ -23,5 +23,8 @@ Returns a data frame of results containing company financial growth data.
 Get company financial growth
 }
 \examples{
-company_financial_growth(ticker = "AAPL", period = "annualy", api_key = api)
+company_financial_growth(
+ticker = "AAPL",
+period = "annualy",
+api_key = "42632c388365783ab0c341411f47ae80")
 }

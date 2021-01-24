@@ -20,5 +20,5 @@ Returns a data frame of results containing form 13f data.
 Get form_13f
 }
 \examples{
-form_13f(cik_nr = "0001067983", date = "2020-01-01", api_key = api)
+form_13f(cik_nr = "0001067983", date = "2020-01-01", api_key = "42632c388365783ab0c341411f47ae80")
 }

@@ -16,7 +16,10 @@
 #' @export
 #'
 #' @examples
-#' historic_price(ticker = "AAPL", time = "full", api_key = api)
+#' historic_price(ticker = "AAPL", time = "full", api_key = "42632c388365783ab0c341411f47ae80")
+#'
+#' @import httr
+#' @import jsonlite
 historic_price <- function(ticker, time, api_key = api){
   if(time == "full"){
     res <- GET(paste0("https://financialmodelingprep.com/api/v3/historical-price-full/",ticker,"?apikey=",api_key))

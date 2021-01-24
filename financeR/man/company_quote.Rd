@@ -18,5 +18,5 @@ Returns a data frame of results containing real time company quote data.
 Get real time company quote
 }
 \examples{
-company_quote(tickers = c("AAPL","MSFT"), api_key = api)
+company_quote(tickers = c("AAPL"), api_key = "42632c388365783ab0c341411f47ae80")
 }

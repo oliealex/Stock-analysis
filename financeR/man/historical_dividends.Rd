@@ -18,5 +18,5 @@ Returns a data frame of results containing historical dividend data.
 Get historical dividend
 }
 \examples{
-historical_dividends(ticker = "AAPL", api_key = api)
+historical_dividends(ticker = "AAPL", api_key = "42632c388365783ab0c341411f47ae80")
 }

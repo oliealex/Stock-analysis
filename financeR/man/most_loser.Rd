@@ -16,5 +16,5 @@ Returns a data frame of results containing most losing stocks.
 Get most losing stocks
 }
 \examples{
-most_loser(api_key = api)
+most_loser(api_key = "42632c388365783ab0c341411f47ae80")
 }

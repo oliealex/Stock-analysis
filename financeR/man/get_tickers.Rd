@@ -16,5 +16,5 @@ Returns a data frame of results containing all available tickers
 Get tickers
 }
 \examples{
-get_tickers(api_key = api)
+get_tickers(api_key = "42632c388365783ab0c341411f47ae80")
 }

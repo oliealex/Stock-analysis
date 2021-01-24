@@ -18,5 +18,5 @@ Returns a data frame of results containing historical discounted cash flow data.
 Get historical discounted cash flow data
 }
 \examples{
-historical_dcf(tickers = c("AAPL", "MSFT"), api_key = api)
+historical_dcf(tickers = c("AAPL"), api_key = "42632c388365783ab0c341411f47ae80")
 }

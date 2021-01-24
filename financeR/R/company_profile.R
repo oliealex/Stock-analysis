@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-#' company_profile(tickers = c("AAPL", "MSFT"), api_key = api)
+#' company_profile(tickers = c("AAPL"), api_key = "42632c388365783ab0c341411f47ae80")
 company_profile <- function(tickers, api_key = api){
   if(length(tickers) > 1){
     res <- GET(paste0("https://financialmodelingprep.com/api/v3/profile/",tickers[1],"?apikey=",api_key))

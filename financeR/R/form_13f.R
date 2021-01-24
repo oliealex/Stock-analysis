@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' form_13f(cik_nr = "0001067983", date = "2020-01-01", api_key = api)
+#' form_13f(cik_nr = "0001067983", date = "2020-01-01", api_key = "42632c388365783ab0c341411f47ae80")
 form_13f <- function(cik_nr = NULL, date, api_key = api){
   res <- GET(paste0("https://financialmodelingprep.com/api/v3/form-thirteen/",cik_nr,"?",date,"&apikey=",api_key))
   data <- fromJSON(rawToChar(res$content))

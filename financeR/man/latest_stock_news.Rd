@@ -16,5 +16,5 @@ Returns a data frame of results containing the latest stock news.
 Get latest stock news
 }
 \examples{
-latest_stock_news(api_key = api)
+latest_stock_news(api_key = "42632c388365783ab0c341411f47ae80")
 }

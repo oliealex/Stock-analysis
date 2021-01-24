@@ -41,5 +41,9 @@ Returns a data frame of results containing in trade day indicators.
 Get in trade day indicators
 }
 \examples{
-intraday_indicators(ticker = "AAPL", time = "1hour", type = "SMA", api_key = api)
+intraday_indicators(ticker = "AAPL",
+time = "1hour",
+period =  10,
+type = "SMA",
+api_key = "42632c388365783ab0c341411f47ae80")
 }

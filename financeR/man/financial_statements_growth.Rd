@@ -24,5 +24,8 @@ Returns a data frame of results containing company financial statement growth da
 Get financial statement growth data
 }
 \examples{
-financial_statement_growth(ticker = "AAPL", type = "income", api_key = api)
+financial_statements_growth(
+ticker = "AAPL",
+type = "income",
+api_key = "42632c388365783ab0c341411f47ae80")
 }

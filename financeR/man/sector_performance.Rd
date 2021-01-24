@@ -16,5 +16,5 @@ Returns a data frame of results containing sector performance data.
 Get sector performance data
 }
 \examples{
-sector_performance(api_key = api)
+sector_performance(api_key = "42632c388365783ab0c341411f47ae80")
 }

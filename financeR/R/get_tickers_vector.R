@@ -5,8 +5,6 @@
 #' @return Returns a vector of results containing all available tickers
 #' @export
 #'
-#' @examples
-#' get_tickers_vector(api_key = api)
 get_tickers_vector <- function(api_key = api){
   res <- GET(paste0("https://financialmodelingprep.com/api/v3/stock/list/?apikey=",api_key))
   data <- fromJSON(rawToChar(res$content))
@@ -14,4 +12,3 @@ get_tickers_vector <- function(api_key = api){
   vector <- data[,1]
   return(vector)
 }
-

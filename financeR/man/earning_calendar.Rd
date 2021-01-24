@@ -22,5 +22,8 @@ Returns a data frame of results containing earning calendar.
 Get earning calendar
 }
 \examples{
-earning_calendar(ticker = "AAPL", datefrom = "2019-01-01", datato = "2020-01-01", api_key = api)
+earning_calendar(ticker = "AAPL",
+datefrom = "2019-01-01",
+dateto = "2020-01-01",
+api_key = "42632c388365783ab0c341411f47ae80")
 }

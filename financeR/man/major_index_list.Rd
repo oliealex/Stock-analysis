@@ -16,5 +16,5 @@ Returns a data frame of results containing major index list data.
 Get major index list
 }
 \examples{
-major_index_list(api_key = api)
+major_index_list(api_key = "42632c388365783ab0c341411f47ae80")
 }

@@ -23,5 +23,8 @@ Returns a data frame of results containing company cash flow statement data.
 Get company cash flow statement
 }
 \examples{
-cash_flow_statement(ticker = "AAPL", period = "annualy", api_key = api)
+cash_flow_statement(
+ticker = "AAPL",
+period = "annualy",
+api_key = "42632c388365783ab0c341411f47ae80")
 }

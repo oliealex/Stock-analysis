@@ -18,5 +18,5 @@ Returns a data frame of results containing company ratings data.
 Get company ratings
 }
 \examples{
-company_ratings(tickers = c("AAPL", "MSFT"), api_key = api)
+company_ratings(tickers = c("AAPL"), api_key = "42632c388365783ab0c341411f47ae80")
 }

@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-#' historical_stock_splits(ticker = "AAPL", api_key = api)
+#' historical_stock_splits(ticker = "AAPL", api_key = "42632c388365783ab0c341411f47ae80")
 historical_stock_splits <- function(ticker, api_key = api){
   res <- GET(paste0("https://financialmodelingprep.com/api/v3/historical-price-full/stock_split/",ticker,"?apikey=",api_key))
   data <- fromJSON(rawToChar(res$content))
